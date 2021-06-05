@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Caixas</title>
+    <title>Modelo de Caixas parte 1 e 2</title>
     <style>
-        h1 {
+        h1 { /* Box-leve */
             background-color: lightgray;
             height: 300px;
             width: 300px;
-            border-width: 10px;
-            border-style: solid;
-            border-color: darkslategray;
 
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
+            /* Utilizando shorthands. */
+            border: 10px solid darkslategray;
+            padding: 10px;
+            margin: 20px auto 40px auto;
+            outline: 5px dashed salmon;
+
+            /* 
+                O 'margin: auto;' Faz fica centralizado horizontalmente.
+                O 'margin: auto;' funciona caso for uma caixa se for texto utiliza o 'text-align: center;'
+            */
         }
 
-        a {
+        a { /* Inline-leve */
             border-width: 10px;
             border-style: solid;
             border-color: red;
